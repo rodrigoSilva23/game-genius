@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.game-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: rgb(68, 68, 68);
+}
+.genius-wrapper {
+  display: grid;
+  grid-template-areas:
+    "genius-red genius-blue"
+    "genius-yellow genius-green";
+  gap: 10px;
+  width: 600px;
+  height: 600px;
+  background: white;
+  border-radius: 50%;
+}
+
+.genius-red {
+  grid-area: "genius-red";
+
+  background: red;
+  border-top-left-radius: 100%;
+  border-style: outset;
+}
+.genius-blue {
+  grid-area: "genius-blue";
+
+  background: blue;
+  border-top-right-radius: 100%;
+  border-style: outset;
+}
+.genius-yellow {
+  grid-area: "genius-yellow";
+
+  background: rgb(255, 217, 0);
+  border-bottom-left-radius: 100%;
+  border-style: outset;
+}
+.genius-green {
+  grid-area: "genius-green";
+
+  background: rgb(14, 160, 21);
+  border-bottom-right-radius: 100%;
+  border-style: outset;
+}
+.selected {
+  opacity: 0.5;
+  border-style: inset;
+}
